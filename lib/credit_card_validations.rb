@@ -44,7 +44,7 @@ module CreditCardValidations
 
   def self.reload!
     Detector.brands = {}
-    data.each do |key, data|
+    data.sort.each do |key, data|
       add_brand(key, data.fetch(:rules), data.fetch(:options, {}))
     end
   end
@@ -52,6 +52,3 @@ module CreditCardValidations
 end
 
 CreditCardValidations.reload!
-
-
-

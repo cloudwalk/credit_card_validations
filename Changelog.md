@@ -33,6 +33,7 @@
 
 # 3.5.1
    * Bump activemodel and activesupport versions
+   * Adding some Brazilian Bins
 
 # 3.5.0
    * Unionpay and Maestro range updates, PR #88
